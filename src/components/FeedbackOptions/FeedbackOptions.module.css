@@ -1,0 +1,18 @@
+.wrapFeedback {
+  display: flex;
+  gap: 20px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgb(196, 255, 219);
+  font-weight: 400px;
+  font-size: 20px;
+  line-height: calc(26 / 18);
+}

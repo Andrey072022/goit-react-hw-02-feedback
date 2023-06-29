@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import css from './FeedbackOptions.module.css';
 
-class FeedbackOptions extends Component {
-  render() {
-    const { options, onLeaveFeedback } = this.props;
+export const FeedbackOptions  = ( { options, onLeaveFeedback } = this.props) =>{
     return (
       <div className={css.wrapFeedback}>
         {options.map((btn, index) => (
@@ -24,7 +22,7 @@ class FeedbackOptions extends Component {
       </div>
     );
   }
-}
+
 
 export default FeedbackOptions;
 

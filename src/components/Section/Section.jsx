@@ -1,17 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import css from './Section.module.css';
 
-class Section extends Component {
-  render() {
+export const Section  =({ title, children } = this.props) => {
     return (
       <div className={css.conteiner}>
-        <h1>{this.props.title}</h1>
-        {this.props.children}
+        <h1>{title}</h1>
+        {children}
       </div>
     );
   }
-}
+
 
 export default Section;
 
